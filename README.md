@@ -103,3 +103,49 @@ A full-stack video processing application that allows users to upload videos, pr
 
 ---
 
+
+
+## 📦 Setup & Run Locally
+
+
+# Clone the repository
+```bash
+git clone `https://github.com/harishreyya/video-processing-app.git`
+```
+
+# Install dependencies
+```bash
+cd Backend
+npm install
+cd frontend
+npm install
+```
+
+
+# Set environment variables
+### Inside Backend folder
+```bash
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret
+CLOUD_NAME=your_cloudinary_name
+CLOUD_API_KEY=your_key
+CLOUD_API_SECRET=your_secret
+```
+
+### Inside Frontend Folder
+```bash
+VITE_API_URL=http://localhost:5000/
+```
+
+# Run the development server
+```bash
+cd frontend
+npm run dev
+cd Backend
+npm run server
+```
+
+
+
+
