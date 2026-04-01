@@ -7,6 +7,7 @@ import VideoLibrary from "./pages/VideoLibrary";
 import AdminDashboard from "./pages/AdminDashboard";
 import EditorDashboard from "./pages/EditorDashboard";
 import Layout from "./components/Layout";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+          <Route path="/" element={<Home />} />
 
 <Route
   path="/upload"
