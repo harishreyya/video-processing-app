@@ -17,7 +17,7 @@ const VideoPlayer = ({ videoId }) => {
       className="w-full h-full bg-black"
     >
       <source
-        src={`http://localhost:5000/api/stream/${videoId}`}
+        src={`${import.meta.env.VITE_API_URL}/api/stream/${videoId}`}
         type="video/mp4"
       />
     </video>
